@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * Description: main - Prints outs a sring 
- * Return:0 if success 
+ * Description: main - Prints outs a sring. 
+ * Return:0 if success.
+ */ 
 
 int main (void)
 {
