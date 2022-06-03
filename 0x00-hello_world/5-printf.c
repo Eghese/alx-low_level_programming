@@ -1,4 +1,4 @@
-#include <studio>
+#include <stdio.h>
 /**
  * Description: main - prints out a string
  *
