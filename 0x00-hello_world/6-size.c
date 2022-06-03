@@ -13,5 +13,3 @@ int main(void)
 	printf("size of a char: %d byte(s)\n", sizeof(float));
 	return (0);
 }
-
- 
