@@ -1,7 +1,10 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/** Description: main - print a random number which can be positive or negative
+#include <stdio.h>
+
+/**
+ * Description: main - print a random number which can be positive or negative
+ *
  * Return: 0 if success
  *
  */
