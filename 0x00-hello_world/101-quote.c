@@ -1,9 +1,9 @@
 #include <stdio.h>
- /**
-  * main - prints value to the stderr
-  *
-  * Return: 1 if success
-  */
+/**
+ * main - prints value to the stderr
+ *
+ * Return: 1 
+ */
 
 int main(void)
 {
