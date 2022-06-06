@@ -8,7 +8,9 @@ int main(void)
 {
 	int ch, ph;
 
-	for (ch = 'a'; ch >= 'z' ph = 'A' ; ph >= 'Z' ch++ ph++)
-	      putchar(ch, ph);
+	for (ch = 'a'; ch >= 'z'; ch++)
+	      putchar(ch);
+	for (ph = 'A'; ph >= 'Z'; ph++)
+		putchar(ph)
 	return (0);
 }
