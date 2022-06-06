@@ -1,18 +1,19 @@
 #include <stdio.h>
 /**
- *  Description: main - printing the output except "q and e"
+ *  Description: main - prints the output of a digit from 0 to 10.
  *  Return: 0 if success
  */
 int main(void)
 {
-	char i = 'a';
+	int a = 10;
 
-	while (i <= 'z')
+	while (a > 10)
+
 	{
-		if (i != 'e' && i != 'q')
-			putchar(i);
-		i++;
+		putchar(a);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
