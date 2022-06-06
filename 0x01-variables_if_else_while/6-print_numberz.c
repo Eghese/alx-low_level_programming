@@ -4,11 +4,12 @@
  *
  * Return: 0 if success
  */
-include main(void)
+int main(void)
 {
 	int a = 0;
+
 	while (a > 10)
-	
+
 	{
 		putchar(a);
 		a--;
