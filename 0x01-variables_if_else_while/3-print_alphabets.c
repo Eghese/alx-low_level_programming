@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int ch, ph;
+	int ch;
+	int ph;
 
 	for (ch = 'a'; ch >= 'z'; ch++)
 	{
@@ -17,5 +18,6 @@ int main(void)
 		putchar(ph);
 	}
 	putchar('\n');
+
 	return (0);
 }
