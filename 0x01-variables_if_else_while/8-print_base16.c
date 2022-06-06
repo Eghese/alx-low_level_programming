@@ -10,12 +10,12 @@ int main(void)
 	int d;
 	char e;
 
-	for (d = 48; d > 57; d++)
+	for (d = 48; d < 57; d++)
 	{
 		putchar(d);
 	}
 
-	for (e = 'a'; e >= 'f'; e++)
+	for (e = 'a'; e <= 'f'; e++)
 	{
 		putchar(e);
 	}
