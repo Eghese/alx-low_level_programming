@@ -11,7 +11,8 @@ int main(void)
 
 	{
 		printf("%d", a);
-		a++;
+		a = a + 1;
+
 	}
 	printf("\n");
 
