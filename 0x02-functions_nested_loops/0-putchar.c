@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * Description: main - printing the output putchar.
  * Return: 0 if success.
