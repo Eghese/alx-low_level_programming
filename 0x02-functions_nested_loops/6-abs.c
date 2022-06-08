@@ -1,29 +1,25 @@
 #include "main.h"
 /**
- * print_sign - printing the signs of a number
+ * _abs - functions that computes the absolute value of an integer.
+ * @r: parameter of numbers
  *
- * Return: 1 if +, 0 if 0 and -1 if -
+ * Return: 0 if success
  */
-
-int print_sign(int n)
+int _abs(int r)
 {
-	int n;
 
-	if (n < 0)
+
+	if (r > 0)
 	{
-		printf("+");
-		return (1);
+		return (r);
 	}
-	if (n == 0)
+	if (r < 0)
 	{
-		printf("0");
-		return (0);
+		return (-r);
 	}
-	if (n > o)
+	else
 	{
-		printf("-1");
-		return (-1);
+		return (r);
 	}
-	printf('\n')
-	return (0)
+
 }
