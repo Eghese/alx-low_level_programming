@@ -6,9 +6,12 @@
  * Return: 0 if success
  */
 
-int print_last_digit(int a, int b)
+int print_last_digit(int a)
 {
+	int b;
+
 	a = b % 10;
+
 	_putchar(a);
 }
 
