@@ -23,4 +23,4 @@ int main(void)
 
 	return (0);
 }
-/* i was not incremented in the loop */
+
