@@ -16,10 +16,11 @@ int main(void)
 	while (i < 10)
 	{
 		putchar(i);
-		/* no increment so it will loop infinitely */
+
 	}
 
 	printf("Infinite loop avoided! \\0/\n");
 
 	return (0);
 }
+/* i was not incremented in the loop */
