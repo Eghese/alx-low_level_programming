@@ -6,6 +6,6 @@
 
 void reset_to_98(int *n)
 {
-	int slice = 98;
-	int *p = &slice;
+	int d = 98;
+	 *n = d;
 }
