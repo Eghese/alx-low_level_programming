@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strcpy - functions that copies the string pointed to by src
- * @dest: parameter for string
- * @str: parameter for string
+ * @dest: destination pointer parameter
+ * @str: source pointer parameter
  * return: pointer
  */
 char *_strcpy(char *dest, char *src)
