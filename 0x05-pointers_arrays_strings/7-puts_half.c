@@ -28,6 +28,7 @@ void puts_half(char *str)
 	while (j < k)
 	{
 		_putchar(str[j]);
+		j++;
 	}
 	_putchar('\n');
 }
