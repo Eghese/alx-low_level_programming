@@ -11,16 +11,8 @@ char *_strcat(char *dest, char *src)
 {
 	int var1, var2, i;
 
-	while (dest[i] != '\0')
-	{
-		_putchar(dest[i]);
-		i++;
-	}
-	while (src[i] != '\0')
-	{
-		_putchar(src[i]);
-		i++;
-	}
+	var1 = strlen(dest);
+	var2 = strlen(src);
 
 	for (i = 0; i <= var2; i++)
 	{
