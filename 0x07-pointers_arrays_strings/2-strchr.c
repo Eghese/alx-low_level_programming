@@ -3,7 +3,7 @@
  * _strchr - functions that locates the character of a string
  * @s: a char variable
  * @c: a char variable
- * retur: the value of s
+ * Return: the value of s
  */
 char *_strchr(char *s, char c)
 {
@@ -13,12 +13,12 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 		{
 			return (s);
-			s++;
 		}
 
 		if (*s == c)
 		{
 			return (s);
+			s++;
 		}
 	}
 }
