@@ -2,7 +2,6 @@
 /**
  * _puts_recursion - functions that prints a strings with a line
  * @s: a pointer char
- * Return: void
  */
 void _puts_recursion(char *s)
 {
@@ -11,4 +10,5 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
+
 }
