@@ -2,15 +2,17 @@
 /**
  * _strlen_recursion - function that returns the length of a string.
  * @s: a char variable
- * Return: i
+ * Return: 1 and 0
  */
 int _strlen_recursion(char *s)
 {
-	int i;
-
-	if (s[i] != '\0')
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
 	{
 		_strlen_recursion(s + 1);
-		return (i);
+		return (1);
 	}
 }
