@@ -2,18 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - program that multiply two numbers
+ * main - functions that multiiplies two number
  * @argv: argument value
  * @argc: argument count
- * Return: 0 if success, and 1 if there is error
+ * Return: 1 if error and 0 success
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
-	if (argc != 3)
+	if (argc != 2)
 	{
-		printf("Error\n");
+		printf("error\n");
 		return (1);
 	}
 	else
