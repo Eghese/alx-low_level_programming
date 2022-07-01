@@ -2,17 +2,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* malloc_checked - allocates memory using malloc.
-* @b: integer parameter
-* Return: pointer
+*array_range - creates an array of integers
+*@min: minimum
+*@max: maxumum
+*Return: pointer to newly created array
 */
-void *malloc_checked(unsigned int b)
+int *array_range(int min, int max)
 {
-	void *val;
+	int *arr, i = 0, j = min;
 
-	val = malloc(b);
-	if (val == NULL)
-		exit(98);
-else
-	return (val);
+	if (min > max)
+		return (NULL);
+
+	arr = malloc((max - min + 1) * sizeof(int));
+
+	if (!arr)
+		return (0);
+	while (i <= max - min)
+		arr[i++] = j++;
+	return (arr);
 }
