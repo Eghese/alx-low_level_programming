@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -8,7 +9,6 @@
 * Return: NULL
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
 {
 int count, count1;
 int sign = n;
