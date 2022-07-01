@@ -2,38 +2,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*  _realloc - reallocate memory size function
-*  @ptr: pointer to address of old memory location
-*  @old_size: unsigned int
-*  @new_size: unsigned int 
-*  @nmemb: unsigned integer
-*  @size: unsigned integer
-*  Return: return pointer to array
+* _calloc - allocates memory to array
+* @nmemb: number of element
+* @size: integer
+* Return: pointer of array.
 */
-void *_realloc(void *ptr,unsigned int nmemb, unsigned int size,int old_size,unsigned int new_size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *s;
+	unsigned int arr;
+	char *pt;
 
-	if (new_size > old_size)
-	{
-		s = malloc(new_size);
-		free(ptr);
-		return (s);
-	}
-	if (new_size == old_size)
-	{
-		return (ptr);
-	}
-	if (ptr == NULL)
-	{
-		s = malloc(new_size);
-		free(ptr);
-		return (s);
-	}
-	if (new_size == 0 && ptr != NULL)
-	{
-		free(ptr);
+	if (nmemb == 0 || size == 0)
 		return (NULL);
+	pt = malloc(nmemb * size);
+	if (pt == NULL)
+		return (NULL);
+	arr = 0;
+	while (arr < nmemb * size)
+	{
+		pt[arr] = 0;
+		arr++;
 	}
-	return (ptr);
+	return (pt);
 }
