@@ -6,11 +6,11 @@
 * @name: A char datatype
 * @age: A float datatype
 * @Owner: A char datatype
-* Return: 0 if sucess.
+* Description: sturcture to store dog
 */
 typedef struct dog
 {
-	name = char *
-	age = float
-	owner = char *
+	char *name;
+	float *name;
+	char owner*;
 } dog_t;
