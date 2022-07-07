@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "funtion_pointers.h"
+#include "function_pointers.h"
 /**
  * array_iterator - functions that loops through an arry
  * @array: a pointer with int type
@@ -13,12 +13,12 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	if (action == NULL)
 		return;
-	if (i <= 0)
+	if (size <= 0)
 		return;
 	if (array == NULL)
 		return;
-	for (count = 0; count < i; count++)
+	for (i = 0; i < size; i++)
 	{
-		action(array[count]);
+		action(array[i]);
 	}
 }
