@@ -1,21 +1,27 @@
 #include <stdio.h>
 #include "lists.h"
-
+#include <stdlib.h>
+#include <string.h>
 /**
-* print_listint - function to print all elements
+* print_list - function to print node elements
 * @h: listint_t type of node struct
 * Return: Always successful
 */
-size_t print_listint(const listint_t *h)
+size_t print_list(const list_t *h)
 {
-	unsigned int count;
+	unsigned int i = 0;
 
-	count = 0;
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
+		if (h->str ==  NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		count++;
+		i++;
 	}
-	return (count);
+
+	return (i);
 }
