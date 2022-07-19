@@ -1,19 +1,19 @@
+#include <stdio.h>
 #include "lists.h"
 /**
-* add_nodeint - function to add node from top
-* @head: listint_t type of node to head
-* @n: const int type
+* listint_len - function to print all elements
+* @h: listint_t type of node struct
 * Return: Always successful
 */
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
-	listint_t *top = NULL;
+	unsigned int count;
 
-	top = malloc(sizeof(listint_t));
-	if (top == NULL)
-		return (NULL);
-	top->n = n;
-	top->next = *head;
-	*head = top;
-	return (*head);
+	count = 0;
+	while (h != NULL)
+	{
+		h = h->next;
+		count++;
+	}
+	return (count);
 }
