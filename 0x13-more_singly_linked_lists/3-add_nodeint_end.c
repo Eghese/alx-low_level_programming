@@ -1,5 +1,5 @@
-nclude "lists.h"
-
+#include "lists.h"
+#include <stdlib.h>
 /**
 * *add_nodeint_end - function to add node from top
 * @head: listint_t type of node struct pointer to head
