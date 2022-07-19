@@ -1,8 +1,5 @@
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 #include <stdio.h>
-
 /**
  * print_listint - A function that prints all the element of listint_t list.
  * @h: a pointer of a node struct
