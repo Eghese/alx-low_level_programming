@@ -1,10 +1,11 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
-* add_nodeint - function to add node from top
-* @head: listint_t type of node to head
-* @n: const int type
-* Return: Always successful
-*/
+ *  add_nodeint - function to add node from top
+ *  @head: listint_t type of node struct pointer to head
+ *  @n: const int type
+ *  Return: Always successful
+ */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *top = NULL;
