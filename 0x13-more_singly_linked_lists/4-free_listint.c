@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 /**
 * free_listint - function to free heap
 * @head: pointer to struct of listint type
