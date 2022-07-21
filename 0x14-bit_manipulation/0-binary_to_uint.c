@@ -1,4 +1,4 @@
-#include "notrebloh.h"
+#include "main.h"
 #include <stdio.h>
 /**
 * binary_to_uint - function to convert binary to unsigned int
