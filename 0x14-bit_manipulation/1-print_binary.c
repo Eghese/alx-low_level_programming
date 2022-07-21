@@ -1,4 +1,4 @@
-#include "notrebloh.h"
+#include "main.h"
 
 /**
  * print_binary - function to convert number to binary
