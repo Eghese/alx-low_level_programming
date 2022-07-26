@@ -1,28 +1,36 @@
 #include "main.h"
 /**
- * create_file - function that creates file
- * @filename: pointer to filename to be created of char const type
- * @text_content: string to be written into file
- * Return: always successfull
+ * read_textfile - function to read and write a file
+ * @filename: const char type pointer to file to be read
+ * @letters: size_t type
+ * Return: always successful
  */
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, length, fdwrite;
+	int fd;
+	ssize_t fdread, fdwrite, fdclose;
+	char *space;
 
-	fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
-	if (fd == -1)
-		return (-1);
-
-	if (text_content == NULL)
-		text_content = "";
-	length = 0;
-	while (text_content[length] != '\0')
+	if (filename == NULL)
+		return (0);
+	space = malloc(sizeof(char) * letters);
+	if (space == NULL)
 	{
-		length++;
+		return (-1);
 	}
-	fdwrite = write(fd, text_content, length);
+
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (0);
+	fdread = read(fd, space, letters);
+	if (fdread == -1)
+		return (-1);
+	fdwrite = write(STDOUT_FILENO, space, fdread);
+
 	if (fdwrite == -1)
 		return (-1);
-	close(fd);
-	return (1);
+	fdclose = close(fd);
+	if (fdclose == -1)
+		return (-1);
+	return (fdread);
 }
