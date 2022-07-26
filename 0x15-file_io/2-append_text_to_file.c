@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* create_file - function that creates file
-* @filename: pointer to filename to be created of char const type
-* @append_text_to_file: string to be written into file
+* append_text_to_file - function that creates file
+* @filename: pointer to file to be appended
+* @text_content: string to be written into file
 * Return: always successfull
 */
 int append_text_to_file(const char *filename, char *text_content)
